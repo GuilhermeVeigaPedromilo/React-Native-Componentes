@@ -18,6 +18,15 @@ function ExemplosTouch() {
       >
         <TextTouch>Ex.:Text com CHILDREN</TextTouch>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={{ backgroundColor: "white", padding: 10, borderRadius: 20 }}
+        onPress={() => {
+          console.log("ExemploTouchableOpacityChildren"); // Imprime uma mensagem no console
+          navigation.navigate("ExemploTouchableOpacityChildren"); // Navega para a tela "ExemploTxtComChildren"
+        }}
+      >
+        <TextTouch>Ex.: TouchableOpacity com CHILDREN</TextTouch>
+      </TouchableOpacity>
     </View>
   );
 }

@@ -4,7 +4,7 @@ import TextTtitulo from "../components/TXT/TxtComponent"; // Importa o component
 import HeaderPrincipal from "../components/GERAL/headerprincipal"; // Importa o componente HeaderPrincipal
 import Rodape from "../components/GERAL/rodape"; // Importa o componente Rodape
 
-export default function ExemploButtonTxt() {
+export default function ExemploTxt() {
   return (
     <View style={styles.container}>
       <HeaderPrincipal />
