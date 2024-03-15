@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
-import styles from "../styles/styles";
-import TextTtitulo from "../components/TXT/TxtComponent";
-import HeaderPrincipal from "../components/GERAL/headerprincipal";
-import Rodape from "../components/GERAL/rodape";
+import { View } from "react-native";
+import styles from "../styles/styles"; // Importa os estilos do arquivo styles.js
+import TextTtitulo from "../components/TXT/TxtComponent"; // Importa o componente TextTtitulo
+import HeaderPrincipal from "../components/GERAL/headerprincipal"; // Importa o componente HeaderPrincipal
+import Rodape from "../components/GERAL/rodape"; // Importa o componente Rodape
 
 export default function ExemploButtonTxt() {
   return (
