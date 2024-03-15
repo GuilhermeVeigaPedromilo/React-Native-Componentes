@@ -4,6 +4,7 @@ import Home from "./src/pages/Home";
 import ExemploTxtComChildren from "./src/pages/ExemploTxtComChildren";
 import ExemploTouchableOpacityChildren from './src/pages/ExemploTouchableOpacityChildren';
 import Exemplos from "./src/pages/Exemplos";
+import ExemploProps from "./src/pages/ExemploProps";
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,11 @@ export default function App() {
         <Stack.Screen
           name="ExemploTouchableOpacityChildren"
           component={ExemploTouchableOpacityChildren}
+          options={{ headerShown: false }}
+        />
+          <Stack.Screen
+          name="ExemploProps"
+          component={ExemploProps}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
