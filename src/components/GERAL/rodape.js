@@ -6,7 +6,7 @@ import styles from '../../styles/styles'; // Importa o arquivo de estilo
 function Rodape({children}) {
 
   return (
-    <View style={[styles.containerRodape, { backgroundColor: 'white' }]}>{children}</View>
+    <View style={[styles.containerRodape, { backgroundColor: 'white', alignItems: 'center', justifyContent: 'center' }]}>{children}</View>
   );
 }
 
