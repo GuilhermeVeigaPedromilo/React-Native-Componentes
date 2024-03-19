@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { View, Modal, Button, Text, TouchableOpacity } from "react-native";
+import {
+  View,
+  Modal,
+  Button,
+  Text,
+  TouchableOpacity,
+  ScrollView,
+} from "react-native";
 import TextProps from "../TXT/TxtProps";
 
 export default function ModalCode({ children }) {
@@ -24,22 +31,38 @@ export default function ModalCode({ children }) {
         ></TextProps>
       </TouchableOpacity>
       <Modal animationType="slide" transparent={true} visible={visivel}>
-        <View style={{ alignItems: "center", marginTop: 150 }}>
-          {children}
-          <TouchableOpacity
-            onPress={() => {
-              setVisivel(false);
-            }}
+        <View
+          style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
+        >
+          <View
             style={{
+              backgroundColor: "white",
+              width: 300,
+              height: 350,
               padding: 10,
-              backgroundColor: "red",
+              borderRadius: 30,
               alignItems: "center",
-              width: 150,
-              borderRadius: 20,
             }}
           >
-            <TextProps style={{ color: "white" }} Texto={"Voltar"}></TextProps>
-          </TouchableOpacity>
+            <ScrollView >{children}</ScrollView>
+            <TouchableOpacity
+              onPress={() => {
+                setVisivel(false);
+              }}
+              style={{
+                padding: 10,
+                backgroundColor: "red",
+                alignItems: "center",
+                width: 150,
+                borderRadius: 20,
+              }}
+            >
+              <TextProps
+                style={{ color: "white" }}
+                Texto={"Voltar"}
+              ></TextProps>
+            </TouchableOpacity>
+          </View>
         </View>
       </Modal>
     </View>
